@@ -1,7 +1,7 @@
 FROM nvcr.io/nvidia/tensorflow:22.05-tf2-py3
 ARG MYUSER=$USER
-ARG MYUID="$(id -u)"
-ARG MYGID="$(id -g)"
+ARG MYUID=1129
+ARG MYGID=1100
  
 ENV DEBIAN_FRONTEND noninteractive
  
