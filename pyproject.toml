@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "explainable-christmas"
+version = "0.1.0"
+description = ""
+authors = ["marcos <marcos.gomesjacinto@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+mlflow = "^1.26.1"
+tensorflow="=2.8.0"
+matplotlib="=3.5.0"
+ipython="=8.3.0"
+bruges="=0.5.4"
+shap="=0.40.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
