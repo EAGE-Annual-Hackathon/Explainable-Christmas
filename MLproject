@@ -1,0 +1,17 @@
+name: explainable salt
+
+entry_points:
+    train:
+        command: "python pipeline/process_data.py && \
+            python pipeline/segregate.py && \
+            python pipeline/train.py"
+
+    explain:
+        command: "python pipeline/process_data.py && \
+            python pipeline/segregate.py && \
+            python pipeline/train.py && \
+            python pipeline/explain.py"
+
+    segregate_train:
+        command: "python pipeline/segregate.py && \
+            python pipeline/train.py"
